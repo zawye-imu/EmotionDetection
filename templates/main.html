@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>This is the home page. (Please wait while the server process the requests)</h1>
+
+<form action="/" method="post">
+    Insert the original name of the twitter page:<input type="text" name="name">
+    <input type="submit">
+</form>
+
+
+{% for x,y in res.items() %}
+<br><br>
+Sentence			:	{{x}}<br>
+Predicted by ANN	: 	{{y[0]}}<br>
+
+<br>
+Keyword Prediction<br>
+
+Anger score			:	{{y[1][0]}}<br>
+Sadness score		:	{{y[1][1]}}<br>
+Joy score			:	{{y[1][2]}}<br>
+Fear score			:	{{y[1][3]}}<br>
+{% endfor %}
+
+<br>
+
+
+</body>
+</html>
