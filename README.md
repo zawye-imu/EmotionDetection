@@ -3,9 +3,9 @@ I want to keep them here. (although the files are organized and messy)
 TODO: organize the files
 
 
-## Project Overview
+# Project Overview
 
-# EmotionDetection
+## EmotionDetection
 detect emotion from texts using ANN and other methods. 
 The main application can be run by the Flask Application Server file.
 
